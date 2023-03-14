@@ -1,0 +1,253 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"><title>pwndocker | Lantern's 小站</title><meta name="author" content="Lantern"><meta name="copyright" content="Lantern"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="pwndocker 学习使用"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://lantern.cool/note-tool-pwndocker/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"><link rel="preconnect" href="//www.google-analytics.com" crossorigin=""><link rel="preconnect" href="//hm.baidu.com"><link rel="preconnect" href="//busuanzi.ibruce.info"><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload='this.media="all"'><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload='this.media="all"'><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload='this.media="all"'><script>var _hmt=_hmt||[];!function(){var e=document.createElement("script");e.src="https://hm.baidu.com/hm.js?c586340026fb7073260722fcc798b88b";var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)}()</script><script async src="https://www.googletagmanager.com/gtag/js?id=UA-165381350-1"></script><script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","UA-165381350-1")</script><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#1f1f1f","position":"bottom-left"},
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  }
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE={title:"pwndocker",isPost:!0,isHome:!1,isHighlightShrink:!1,isToc:!0,postUpdate:"2020-05-25 23:42:54"}</script><noscript><style>#nav{opacity:1}.justified-gallery img{opacity:1}#post-meta time,#recent-posts time{display:inline!important}</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="Lantern's 小站" type="application/atom+xml"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/Lantern-r/cdn_files/img/lantern.jpg" onerror='onerror=null,src="/img/friend_404.gif"' alt="avatar"></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">86</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">50</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">15</div></a></div><hr><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i> <span>首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i> <span>时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i> <span>标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i> <span>分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i> <span>友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i> <span>关于</span></a></div><div class="menus_item"><a class="site-page" href="/artitalk/"><i class="fa-fw fas fa-cubes"></i> <span>自言自语</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image:url(https://cdn.jsdelivr.net/gh/Lantern-r/cdn_files@latest/img/pexels-sebastiaan-stam-1480690.jpg)"><nav id="nav"><span id="blog-info"><a href="/" title="Lantern's 小站"><span class="site-name">Lantern's 小站</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i> <span>搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i> <span>首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i> <span>时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i> <span>标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i> <span>分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i> <span>友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i> <span>关于</span></a></div><div class="menus_item"><a class="site-page" href="/artitalk/"><i class="fa-fw fas fa-cubes"></i> <span>自言自语</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">pwndocker</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2020-05-25T23:42:54.000Z" title="发表于 2020-05-25 23:42:54">2020-05-25</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2020-05-25T23:42:54.000Z" title="更新于 2020-05-25 23:42:54">2020-05-25</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/Note/">Note</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/Note/Tool/">Tool</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">769</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>3分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" data-flag-title="pwndocker"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>由于比赛中经常要更换libc版本, 虚拟机总要切换来切去, 一会儿<code>ubutnu 16.04</code>, 一会儿<code>ubuntu18.04</code>的。</p><p>而<code>pwndocker</code>正是为了解决这个问题, 它继承了pwn的常用工具和各个版本的libc</p><p>官方项目: <a target="_blank" rel="noopener" href="https://github.com/skysider/pwndocker">skysider/pwndocker</a></p><h3 id="included-software"><a href="#included-software" class="headerlink" title="included software"></a>included software</h3><ul><li><a target="_blank" rel="noopener" href="https://github.com/Gallopsled/pwntools">pwntools</a> —— CTF framework and exploit development library</li><li><a target="_blank" rel="noopener" href="https://github.com/pwndbg/pwndbg">pwndbg</a> —— a GDB plug-in that makes debugging with GDB suck less, with a focus on features needed by low-level software developers, hardware hackers, reverse-engineers and exploit developers</li><li><a target="_blank" rel="noopener" href="https://github.com/scwuaptx/Pwngdb">pwngdb</a> —— gdb for pwn</li><li><a target="_blank" rel="noopener" href="https://github.com/JonathanSalwan/ROPgadget">ROPgadget</a> —— facilitate ROP exploitation tool</li><li><a target="_blank" rel="noopener" href="https://github.com/inaz2/roputils">roputils</a> —— A Return-oriented Programming toolkit</li><li><a target="_blank" rel="noopener" href="https://github.com/david942j/one_gadget">one_gadget</a> —— A searching one-gadget of execve(‘/bin/sh’, NULL, NULL) tool for amd64 and i386</li><li><a target="_blank" rel="noopener" href="https://github.com/angr/angr">angr</a> —— A platform-agnostic binary analysis framework</li><li><a target="_blank" rel="noopener" href="https://github.com/radare/radare2">radare2</a> —— A rewrite from scratch of radare in order to provide a set of libraries and tools to work with binary files</li><li><a target="_blank" rel="noopener" href="https://github.com/david942j/seccomp-tools">seccomp-tools</a> —— Provide powerful tools for seccomp analysis</li><li>linux_server[64] —— IDA 7.0 debug server for linux</li><li><a target="_blank" rel="noopener" href="https://tmux.github.io/">tmux</a> —— a terminal multiplexer</li><li><a target="_blank" rel="noopener" href="https://linux.die.net/man/1/ltrace">ltrace</a> —— trace library function call</li><li><a target="_blank" rel="noopener" href="https://linux.die.net/man/1/strace">strace</a> —— trace system call</li></ul><h3 id="included-glibc"><a href="#included-glibc" class="headerlink" title="included glibc"></a>included glibc</h3><p>Default compiled glibc path is .<code>/glibc</code></p><ul><li>2.19 —— ubuntu 12.04 default libc version</li><li>2.23 —— ubuntu 16.04 default libc version</li><li>2.24 —— introduce vtable check in file struct</li><li>2.27 —— pwndocker default glibc version</li><li>2.28~2.31 —— latest libc versions</li></ul><h3 id="How-to-run-in-custom-libc-version"><a href="#How-to-run-in-custom-libc-version" class="headerlink" title="How to run in custom libc version"></a>How to run in custom libc version</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">cp /glibc/2.27/64/lib/ld-2.27.so /tmp/ld-2.27.so</span><br><span class="line">patchelf --set-interpreter /tmp/ld-2.27.so ./<span class="built_in">test</span></span><br><span class="line">LD_PRELOAD=./libc.so.6 ./<span class="built_in">test</span></span><br></pre></td></tr></table></figure><p>or</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> pwn <span class="keyword">import</span> *</span><br><span class="line">p = process([<span class="string">&quot;/path/to/ld.so&quot;</span>, <span class="string">&quot;./test&quot;</span>], env=&#123;<span class="string">&quot;LD_PRELOAD&quot;</span>:<span class="string">&quot;/path/to/libc.so.6&quot;</span>&#125;)</span><br></pre></td></tr></table></figure><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><h3 id="docker安装"><a href="#docker安装" class="headerlink" title="docker安装"></a>docker安装</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">curl -fsSL https://get.docker.com -o get-docker.sh</span><br><span class="line">sudo sh get-docker.sh</span><br><span class="line">sudo usermod -aG docker $(whoami)</span><br></pre></td></tr></table></figure><ul><li>加完权限组以后记得注销或重启以生效</li></ul><h3 id="pwndocker安装"><a href="#pwndocker安装" class="headerlink" title="pwndocker安装"></a>pwndocker安装</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">docker pull skysider/pwndocker</span><br></pre></td></tr></table></figure><h3 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h3><ul><li><strong>Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?</strong> : 运行命令<code>sudo dockerd</code>即可</li></ul><h2 id="容器管理"><a href="#容器管理" class="headerlink" title="容器管理"></a>容器管理</h2><h2 id="运行"><a href="#运行" class="headerlink" title="运行"></a>运行</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">docker run -d --privileged --name=pwner -v ~/work/pwner:/ctf/work skysider/pwndocker</span><br></pre></td></tr></table></figure><ul><li><code>--privileged</code> 表示特权级运行, 不加gdb调试会没有权限</li><li><code>--name=pwner</code>指定 容器 名字为<code>pwner</code></li><li><code>~/work/pwner:/ctf/work</code> 挂载<code>~/work/pwner</code>到容器<code>/ctf/work</code>目录, 方便我们在外部使用<code>vscode</code>编辑脚本</li></ul><p>第二次直接看id后运行</p><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">docker ps -a</span><br><span class="line">docker start docker_id</span><br></pre></td></tr></table></figure><h3 id="进入"><a href="#进入" class="headerlink" title="进入"></a>进入</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">docker <span class="built_in">exec</span> -it docker_id bash</span><br></pre></td></tr></table></figure><p>即可进入docker的shell</p><h3 id="停止"><a href="#停止" class="headerlink" title="停止"></a>停止</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">docker stop docker_id</span><br></pre></td></tr></table></figure><h3 id="删除"><a href="#删除" class="headerlink" title="删除"></a>删除</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">docker rm docker_id</span><br></pre></td></tr></table></figure><h2 id="更换libc"><a href="#更换libc" class="headerlink" title="更换libc"></a>更换libc</h2><p>这里借鉴nuoye大佬的shell脚本并稍作修改, 实现自动化:</p><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">id=pwner</span><br><span class="line">libc=<span class="variable">$1</span></span><br><span class="line">PWD=/ctf/work</span><br><span class="line">ELF=<span class="variable">$2</span></span><br><span class="line">EXP=<span class="variable">$3</span></span><br><span class="line">docker cp ./<span class="variable">$&#123;EXP&#125;</span> <span class="variable">$&#123;id&#125;</span>:<span class="variable">$&#123;PWD&#125;</span></span><br><span class="line">docker cp ./<span class="variable">$&#123;ELF&#125;</span> <span class="variable">$&#123;id&#125;</span>:<span class="variable">$&#123;PWD&#125;</span></span><br><span class="line">docker <span class="built_in">exec</span> -it <span class="variable">$&#123;id&#125;</span> chmod 777 <span class="variable">$&#123;PWD&#125;</span>/<span class="variable">$&#123;ELF&#125;</span></span><br><span class="line">docker <span class="built_in">exec</span> -it <span class="variable">$&#123;id&#125;</span> chmod 777 <span class="variable">$&#123;PWD&#125;</span>/<span class="variable">$&#123;EXP&#125;</span></span><br><span class="line">docker <span class="built_in">exec</span> -it <span class="variable">$&#123;id&#125;</span> cp /glibc/<span class="variable">$&#123;libc&#125;</span>/64/lib/ld-<span class="variable">$&#123;libc&#125;</span>.so <span class="variable">$&#123;PWD&#125;</span></span><br><span class="line">docker <span class="built_in">exec</span> -it <span class="variable">$&#123;id&#125;</span> cp /glibc/<span class="variable">$&#123;libc&#125;</span>/64/lib/libc.so.6 <span class="variable">$&#123;PWD&#125;</span></span><br><span class="line">docker <span class="built_in">exec</span> -it <span class="variable">$&#123;id&#125;</span> patchelf --set-interpreter <span class="variable">$&#123;PWD&#125;</span>/ld-<span class="variable">$&#123;libc&#125;</span>.so <span class="variable">$&#123;PWD&#125;</span>/<span class="variable">$&#123;ELF&#125;</span></span><br><span class="line">docker <span class="built_in">exec</span> -it <span class="variable">$&#123;id&#125;</span> tmux</span><br></pre></td></tr></table></figure><ul><li>id按需要更换</li><li><code>$1</code> 为传递的libc版本</li><li><code>$2</code> 为文件</li><li><code>$3</code> 为exp</li></ul><p>示例:</p><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">./auto_libc.sh 2.23 freenote exp.py</span><br></pre></td></tr></table></figure><p>具体功能就是将elf和python文件cp到docker上, 然后给予权限, 再将libc和ld（这里用2.29版本）移到/tmp下, 再用patchelf –set-interpreter修改elf的ld文件, 然后进入tmux</p><p>而在patch脚本中用如下指定libc执行:</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> pwn <span class="keyword">import</span> *</span><br><span class="line">p = process(<span class="string">&quot;/tmp/elf&quot;</span>, env=&#123;<span class="string">&quot;LD_PRELOAD&quot;</span>:<span class="string">&quot;/tmp/libc.so.6&quot;</span>&#125;)</span><br><span class="line">context.terminal = [<span class="string">&#x27;tmux&#x27;</span>, <span class="string">&#x27;splitw&#x27;</span>, <span class="string">&#x27;-h&#x27;</span>]</span><br><span class="line">p.interactive()</span><br></pre></td></tr></table></figure><h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a target="_blank" rel="noopener" href="https://nuoye-blog.github.io/2020/05/16/tool/Pwndocker%E7%AF%87">Pwndocker篇</a></p></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者:</span> <span class="post-copyright-info"><a href="http://lantern.cool">Lantern</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接:</span> <span class="post-copyright-info"><a href="http://lantern.cool/note-tool-pwndocker/">http://lantern.cool/note-tool-pwndocker/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明:</span> <span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://lantern.cool" target="_blank">Lantern's 小站</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/Tool/">Tool</a><a class="post-meta__tags" href="/tags/Pwn/">Pwn</a></div><div class="post_share"><div class="social-share" data-image="https://cdn.jsdelivr.net/gh/Lantern-r/cdn_files@latest/img/pexels-sebastiaan-stam-1480690.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload='this.media="all"'><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/tool-wsl1/" title="wsl1的安装"><img class="cover" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/Lantern-r/cdn_files@latest/img/pexels-nick-rtr-3129443.jpg" onerror='onerror=null,src="/img/404.jpg"' alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">wsl1的安装</div></div></a></div><div class="next-post pull-right"><a href="/note-pwn-double-free/" title="Double Free"><img class="cover" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/Lantern-r/cdn_files@latest/img/pexels-sebastiaan-stam-3022001.jpg" onerror='onerror=null,src="/img/404.jpg"' alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">Double Free</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/note-tool-pwndbg-pwngdb/" title="Pwngdb + Pwndbg 的联合使用"><img class="cover" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/Lantern-r/cdn_files@latest/img/pexels-sebastiaan-stam-3022001.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2020-07-27</div><div class="title">Pwngdb + Pwndbg 的联合使用</div></div></a></div><div><a href="/tool-useful-tools/" title="实用工具&#x2F;脚本分享"><img class="cover" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/Lantern-r/cdn_files/img/20210409202325.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2020-07-15</div><div class="title">实用工具&#x2F;脚本分享</div></div></a></div><div><a href="/note-tool-angr/" title="angr"><img class="cover" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/Lantern-r/cdn_files@latest/img/pexels-nick-rtr-3129443.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2020-05-15</div><div class="title">angr</div></div></a></div><div><a href="/note-tool-ida-python/" title="IDA Python"><img class="cover" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/Lantern-r/cdn_files@latest/img/pexels-greg-contreras-3177804.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2020-05-05</div><div class="title">IDA Python</div></div></a></div><div><a href="/note-tool-pwntools/" title="Pwntools"><img class="cover" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/Lantern-r/cdn_files@latest/img/pexels-nick-rtr-3129443.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2020-08-05</div><div class="title">Pwntools</div></div></a></div><div><a href="/note-tool-xortool/" title="xortool"><img class="cover" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/Lantern-r/cdn_files@latest/img/5ad63bd8df873.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2020-05-05</div><div class="title">xortool</div></div></a></div></div></div><hr><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i> <span>评论</span></div></div><div class="comment-wrap"><div><div id="gitalk-container"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/Lantern-r/cdn_files/img/lantern.jpg" onerror='this.onerror=null,this.src="/img/friend_404.gif"' alt="avatar"></div><div class="author-info__name">Lantern</div><div class="author-info__description">一位二进制萌新</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">86</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">50</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">15</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/Lantern-r"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/lantern-r" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:l2674318405@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a><a class="social-icon" href="/atom.xml" target="_blank" title="RSS"><i class="fas fa-rss"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">Never Give Up</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AE%80%E4%BB%8B"><span class="toc-number">1.</span> <span class="toc-text">简介</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#included-software"><span class="toc-number">1.1.</span> <span class="toc-text">included software</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#included-glibc"><span class="toc-number">1.2.</span> <span class="toc-text">included glibc</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#How-to-run-in-custom-libc-version"><span class="toc-number">1.3.</span> <span class="toc-text">How to run in custom libc version</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85"><span class="toc-number">2.</span> <span class="toc-text">安装</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#docker%E5%AE%89%E8%A3%85"><span class="toc-number">2.1.</span> <span class="toc-text">docker安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#pwndocker%E5%AE%89%E8%A3%85"><span class="toc-number">2.2.</span> <span class="toc-text">pwndocker安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%97%AE%E9%A2%98"><span class="toc-number">2.3.</span> <span class="toc-text">问题</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%B9%E5%99%A8%E7%AE%A1%E7%90%86"><span class="toc-number">3.</span> <span class="toc-text">容器管理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BF%90%E8%A1%8C"><span class="toc-number">4.</span> <span class="toc-text">运行</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%9B%E5%85%A5"><span class="toc-number">4.1.</span> <span class="toc-text">进入</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%81%9C%E6%AD%A2"><span class="toc-number">4.2.</span> <span class="toc-text">停止</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%A0%E9%99%A4"><span class="toc-number">4.3.</span> <span class="toc-text">删除</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9B%B4%E6%8D%A2libc"><span class="toc-number">5.</span> <span class="toc-text">更换libc</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%82%E8%80%83"><span class="toc-number">6.</span> <span class="toc-text">参考</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/note-tool-z3/" title="Z3"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/Lantern-r/cdn_files@latest/img/pexels-nick-rtr-3129443.jpg" onerror='this.onerror=null,this.src="/img/404.jpg"' alt="Z3"></a><div class="content"><a class="title" href="/note-tool-z3/" title="Z3">Z3</a><time datetime="2022-05-14T00:43:19.000Z" title="更新于 2022-05-14 00:43:19">2022-05-14</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/CVE-d-link-dir-505/" title="D-Link Dir-505 便携路由器越界漏洞分析"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/Lantern-r/cdn_files@latest/img/pexels-sebastiaan-stam-1097456.jpg" onerror='this.onerror=null,this.src="/img/404.jpg"' alt="D-Link Dir-505 便携路由器越界漏洞分析"></a><div class="content"><a class="title" href="/CVE-d-link-dir-505/" title="D-Link Dir-505 便携路由器越界漏洞分析">D-Link Dir-505 便携路由器越界漏洞分析</a><time datetime="2021-11-09T17:44:37.000Z" title="更新于 2021-11-09 17:44:37">2021-11-09</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/CVE-d-link-dir-645/" title="D-Link Dir-645 路由器溢出漏洞分析"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/Lantern-r/cdn_files@latest/img/pexels-sebastiaan-stam-1097456.jpg" onerror='this.onerror=null,this.src="/img/404.jpg"' alt="D-Link Dir-645 路由器溢出漏洞分析"></a><div class="content"><a class="title" href="/CVE-d-link-dir-645/" title="D-Link Dir-645 路由器溢出漏洞分析">D-Link Dir-645 路由器溢出漏洞分析</a><time datetime="2021-11-08T17:44:37.000Z" title="更新于 2021-11-08 17:44:37">2021-11-08</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/wp-games-buuctf/" title="BUUOJ 题库练习"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/Lantern-r/cdn_files/img/write_up.png" onerror='this.onerror=null,this.src="/img/404.jpg"' alt="BUUOJ 题库练习"></a><div class="content"><a class="title" href="/wp-games-buuctf/" title="BUUOJ 题库练习">BUUOJ 题库练习</a><time datetime="2021-11-04T19:10:31.000Z" title="更新于 2021-11-04 19:10:31">2021-11-04</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/CVE-d-link-dir-815/" title="D-Link DIR-815 路由器多次溢出漏洞分析"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/Lantern-r/cdn_files@latest/img/pexels-sebastiaan-stam-1480690.jpg" onerror='this.onerror=null,this.src="/img/404.jpg"' alt="D-Link DIR-815 路由器多次溢出漏洞分析"></a><div class="content"><a class="title" href="/CVE-d-link-dir-815/" title="D-Link DIR-815 路由器多次溢出漏洞分析">D-Link DIR-815 路由器多次溢出漏洞分析</a><time datetime="2021-10-28T17:44:37.000Z" title="更新于 2021-10-28 17:44:37">2021-10-28</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2019 - 2023 By Lantern</div><div class="framework-info"><span>框架</span> <a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题</span> <a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">Hi, welcome to my blog!</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (true){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><div class="js-pjax"><script>function loadGitalk () {
+  function initGitalk () {
+    var gitalk = new Gitalk(Object.assign({
+      clientID: 'eba91da4778bec626f83',
+      clientSecret: '28e43c46124583d177809ce45217e5671439363c',
+      repo: 'Lantern-r.github.io',
+      owner: 'Lantern-r',
+      admin: ['Lantern-r'],
+      id: 'e50c35f76c866b8e43e978210de3dd98',
+      updateCountCallback: commentCount
+    },null))
+
+    gitalk.render('gitalk-container')
+  }
+
+  if (typeof Gitalk === 'function') initGitalk()
+  else {
+    getCSS('https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.css')
+    getScript('https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js').then(initGitalk)
+  }
+}
+
+function commentCount(n){
+  let isCommentCount = document.querySelector('#post-meta .gitalk-comment-count')
+  if (isCommentCount) {
+    isCommentCount.innerHTML= n
+  }
+}
+
+if ('Gitalk' === 'Gitalk' || !false) {
+  if (false) btf.loadComment(document.getElementById('gitalk-container'), loadGitalk)
+  else loadGitalk()
+} else {
+  function loadOtherComment () {
+    loadGitalk()
+  }
+}</script></div><script id="click-show-text" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/click-show-text.min.js" data-mobile="false" data-text="Just,Learn,Fast" data-fontsize="15px" data-random="false" async></script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: true,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener scroll 
+  window.tocScrollFn && window.removeEventListener('scroll', window.tocScrollFn)
+  window.scrollCollect && window.removeEventListener('scroll', scrollCollect)
+
+  document.getElementById('rightside').style.cssText = "opacity: ''; transform: ''"
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+  typeof disqusjs === 'object' && disqusjs.destroy()
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', 'UA-165381350-1', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i> <span>数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"></div></div><hr><div id="local-search-results"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js"></script></div></body></html>

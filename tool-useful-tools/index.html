@@ -1,0 +1,253 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"><title>实用工具/脚本分享 | Lantern's 小站</title><meta name="author" content="Lantern"><meta name="copyright" content="Lantern"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="分享一些自用的工具&amp;#x2F;脚本, 想到就写进去"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://lantern.cool/tool-useful-tools/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"><link rel="preconnect" href="//www.google-analytics.com" crossorigin=""><link rel="preconnect" href="//hm.baidu.com"><link rel="preconnect" href="//busuanzi.ibruce.info"><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload='this.media="all"'><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload='this.media="all"'><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload='this.media="all"'><script>var _hmt=_hmt||[];!function(){var e=document.createElement("script");e.src="https://hm.baidu.com/hm.js?c586340026fb7073260722fcc798b88b";var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)}()</script><script async src="https://www.googletagmanager.com/gtag/js?id=UA-165381350-1"></script><script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","UA-165381350-1")</script><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#1f1f1f","position":"bottom-left"},
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  }
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE={title:"实用工具/脚本分享",isPost:!0,isHome:!1,isHighlightShrink:!1,isToc:!0,postUpdate:"2021-08-05 10:05:45"}</script><noscript><style>#nav{opacity:1}.justified-gallery img{opacity:1}#post-meta time,#recent-posts time{display:inline!important}</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="Lantern's 小站" type="application/atom+xml"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/Lantern-r/cdn_files/img/lantern.jpg" onerror='onerror=null,src="/img/friend_404.gif"' alt="avatar"></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">86</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">50</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">15</div></a></div><hr><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i> <span>首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i> <span>时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i> <span>标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i> <span>分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i> <span>友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i> <span>关于</span></a></div><div class="menus_item"><a class="site-page" href="/artitalk/"><i class="fa-fw fas fa-cubes"></i> <span>自言自语</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image:url(https://cdn.jsdelivr.net/gh/Lantern-r/cdn_files/img/20210409202325.png)"><nav id="nav"><span id="blog-info"><a href="/" title="Lantern's 小站"><span class="site-name">Lantern's 小站</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i> <span>搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i> <span>首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i> <span>时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i> <span>标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i> <span>分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i> <span>友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i> <span>关于</span></a></div><div class="menus_item"><a class="site-page" href="/artitalk/"><i class="fa-fw fas fa-cubes"></i> <span>自言自语</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">实用工具/脚本分享</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2020-07-15T14:07:22.000Z" title="发表于 2020-07-15 14:07:22">2020-07-15</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-08-05T10:05:45.000Z" title="更新于 2021-08-05 10:05:45">2021-08-05</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/Tool/">Tool</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">926</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>3分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" data-flag-title="实用工具/脚本分享"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><p>自用工具，想到就写进去, 里面的链接都是官网，请放心下载。</p><p><strong>Windows版本: Windows 11 教育版 21H2</strong></p><h2 id="现用工具"><a href="#现用工具" class="headerlink" title="现用工具"></a>现用工具</h2><p><a target="_blank" rel="noopener" href="https://u.tools/">utools</a>: 类似wox的生产力工具合集，强推</p><p><a target="_blank" rel="noopener" href="https://zh.snipaste.com/">Snipaste</a>: 截图/贴图工具</p><p><a target="_blank" rel="noopener" href="https://github.com/Fndroid/clash_for_windows_pkg">Clash</a>: 代理分流工具</p><p><a target="_blank" rel="noopener" href="https://ditto-cp.sourceforge.io/">Ditto</a>: 剪贴板增强工具, 可以保存复制内容</p><p><a target="_blank" rel="noopener" href="https://www.voidtools.com/zh-cn/">Everything</a>: 文件搜索神器</p><p><a target="_blank" rel="noopener" href="https://lopesoft.com/index.php/en/">FileMenuTools</a>: 右键增强工具</p><p><a target="_blank" rel="noopener" href="https://foldermove.com/">Folder Move</a>: C盘空间不够用，又没钱买硬盘的方案, 原理是创建符号链接</p><p><a target="_blank" rel="noopener" href="https://molunerfinn.com/PicGo/">PicGo</a>: 图片上传+管理工具</p><p><a target="_blank" rel="noopener" href="https://github.com/barry-ran/QtScrcpy">Qtscrpy</a>: 基于上面 scrcpy 工具开发的qt界面, 用这个就行了</p><p><a target="_blank" rel="noopener" href="https://typora.io/">Typora</a>: 可视化编写md工具, 可搭配<code>PicGo</code>实现图片自动上传</p><p><a target="_blank" rel="noopener" href="https://github.com/martinrotter/rssguard">RSS Guard</a>: 开源的免费rss订阅器 + <a target="_blank" rel="noopener" href="https://feed43.com/">Feed43</a>就可以订阅几乎所有了, <a target="_blank" rel="noopener" href="https://greasyfork.org/zh-CN/scripts/373252-rss-show-site-all-rss">油猴脚本 RSS+</a>可以用来显示页面的 RSS</p><p><a target="_blank" rel="noopener" href="https://www.stardock.com/products/groupy/">Groupy</a>: 将多个应用程序组织到Windows桌面上的分组选项卡中</p><p><a target="_blank" rel="noopener" href="https://antibody-software.com/web/software/software/wiztree-finds-the-files-and-folders-using-the-most-disk-space-on-your-hard-drive/">wiztree</a>: SpaceSniffer已停止更新。换成<code>wiztree</code>。用来搭配<code>Folder Move</code></p><p><a target="_blank" rel="noopener" href="https://www.tampermonkey.net/">Tampermonkey/油猴</a>: 一款免费的浏览器扩展和最为流行的用户脚本管理器</p><p><a target="_blank" rel="noopener" href="https://code.visualstudio.com/">Visual Studio Code</a>: 轻量级代码/文本编辑器</p><ul><li>Markdown All in One : markdown 插件</li><li>Markdown Preview Enhanced: 预览 markdown</li><li>markdownlint: Markdown 语法检查插件</li><li>Material Icon Theme: Material 图标</li><li>Material Theme: Material 主题</li><li>PicGo: PicGo 插件</li><li>Sublime Text Keymap and Settings Importer: 可以在 vscode 里面使用 Sublime 的快捷键</li><li>TabNine: 超级好用的代码自动补全插件</li><li>Code Spell Checker: 代码拼写检查工具</li><li>Code Runner: 配置好了以后可以直接运行代码文件</li><li>C/C++: C/C++ 插件</li><li>Python: Python 插件</li><li>Insert DateTime: 用快捷键插入形如<code>2020-10-21 09:32:54</code>的时间字符串, 也可以修改模板使其更加符合你的使用规范</li></ul><p><a target="_blank" rel="noopener" href="https://to-do.office.com/tasks/">Microsoft To Do</a>: 微软开发的任务清单, 支持安卓/PC/iOS 同步, 突然出现在我电脑的应用里, 觉得不错就拿来用了</p><p><a target="_blank" rel="noopener" href="https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701?activetab=pivot:overviewtab">Windows Terminal</a>: 微软自己开发的终端窗口美化, 类似 cmder</p><p><a target="_blank" rel="noopener" href="https://windowtop.info/">WindowTop</a>: Windows 窗口调整, 比如透明度, 置顶, 微缩等</p><p><a target="_blank" rel="noopener" href="https://github.com/huiyadanli/RevokeMsgPatcher">微信/QQ/Tim 防撤回 + 微信多开</a>: 如名, github 一个开源工具</p><p><a target="_blank" rel="noopener" href="https://github.com/focusbe/tinyImage">tinyImage</a>: 一款调用 tinypng.com 接口压缩图片的图片压缩工具</p><p><a target="_blank" rel="noopener" href="http://www.bookxnote.com/">Bookxnote</a>: 一款轻便的PDF管理与阅读器</p><p><a target="_blank" rel="noopener" href="https://github.com/BlackINT3/OpenArk/releases">OpenArk</a>: Windows 热键冲突检查</p><p><a target="_blank" rel="noopener" href="https://www.mythicsoft.com/filelocatorpro/">Filelocator Pro</a>: 和Everything差不多，但是其强大之处在于可以搜索文件内容</p><p><a target="_blank" rel="noopener" href="http://www.jflap.org/">JFLAP</a>: 画自动机的小工具<br><a target="_blank" rel="noopener" href="https://stefansundin.github.io/altdrag/">Altdrag</a>: 按下alt键, 轻松拖动窗口。终于不用去找边角出现小箭头了！</p><p><a target="_blank" rel="noopener" href="https://github.com/BluePointLilac/ContextMenuManager">ContextMenuManager</a>: 鼠标右键菜单管理, 删掉一些没用的项目，让右键菜单更整洁</p><p><a target="_blank" rel="noopener" href="https://www.huorong.cn/">火绒</a>: 安全软件, 个人免费</p><h2 id="曾用工具"><a href="#曾用工具" class="headerlink" title="曾用工具"></a>曾用工具</h2><p><del><a target="_blank" rel="noopener" href="https://rammichael.com/7-taskbar-tweaker">7+ Taskbar Tweaker</a>: 控制任务栏</del></p><p><del><a target="_blank" rel="noopener" href="https://github.com/TranslucentTB/TranslucentTB">TranslucentTB</a>: 一个轻量级的工具控制Windows任务栏，例如使任务栏透明【Store商店可下载】</del></p><p><del><a target="_blank" rel="noopener" href="https://github.com/ChanpleCai/SmartTaskbar">SmartTaskbar</a>: 可以控制任务栏，使得任务栏在最大化情况下隐藏任务栏【Store商店可下载】</del></p><p><del><a target="_blank" rel="noopener" href="http://www.itsamples.com/taskbar-hider.html">TaskBar Hider</a>: 直接隐藏状态栏, 但是UI界面设置快捷键无效，直接<code>TaskbarHider.exe -hide</code>有效, 搭配utools的快捷命令并设置鼠标中间快捷启用也挺有用的。合理搭配Windows快捷键</del></p><p><del><a target="_blank" rel="noopener" href="http://www.bitdock.cn/">BitDock</a>: 能像苹果一样弄一个底边栏</del>奇怪的bug, 开启后没效果, 不用了。<br><a target="_blank" rel="noopener" href="https://www.microsoft.com/en-us/download/details.aspx?id=35460">Mouse without borders</a>:微软的工具，它允许你用一个鼠标和键盘控制多达四台电脑。这意味着使用鼠标无边界，您可以复制文本或拖放文件在计算机之间。</p><p><del><a target="_blank" rel="noopener" href="http://www.uderzo.it/main_products/space_sniffer/download.html">SpaceSniffer</a>: 磁盘文件探查工具</del></p><p><del><a target="_blank" rel="noopener" href="https://www.teamviewer.cn/">TeamViewer</a>: 远程桌面控制</del></p><p><del><a target="_blank" rel="noopener" href="https://www.todesk.com/">ToDesk</a>: TeamViewer 莫名其妙卡上天, 换这个了</del>（内网远控，不用了）</p><p><del><a target="_blank" rel="noopener" href="https://github.com/Genymobile/scrcpy">scrcpy</a>: 电脑通过usb控制手机</del></p></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者:</span> <span class="post-copyright-info"><a href="http://lantern.cool">Lantern</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接:</span> <span class="post-copyright-info"><a href="http://lantern.cool/tool-useful-tools/">http://lantern.cool/tool-useful-tools/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明:</span> <span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://lantern.cool" target="_blank">Lantern's 小站</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/Tool/">Tool</a></div><div class="post_share"><div class="social-share" data-image="https://cdn.jsdelivr.net/gh/Lantern-r/cdn_files/img/20210409202325.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload='this.media="all"'><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/tool-wsl2-kvm/" title="WSL2 开启KVM"><img class="cover" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/Lantern-r/cdn_files@latest/img/5ad63bd8df873.jpg" onerror='onerror=null,src="/img/404.jpg"' alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">WSL2 开启KVM</div></div></a></div><div class="next-post pull-right"><a href="/note-pwn-pwn/" title="Pwn 知识点清单"><img class="cover" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/Lantern-r/cdn_files@latest/img/pexels-sebastiaan-stam-1097456.jpg" onerror='onerror=null,src="/img/404.jpg"' alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">Pwn 知识点清单</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/note-tool-angr/" title="angr"><img class="cover" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/Lantern-r/cdn_files@latest/img/pexels-nick-rtr-3129443.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2020-05-15</div><div class="title">angr</div></div></a></div><div><a href="/note-tool-ida-python/" title="IDA Python"><img class="cover" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/Lantern-r/cdn_files@latest/img/pexels-greg-contreras-3177804.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2020-05-05</div><div class="title">IDA Python</div></div></a></div><div><a href="/note-tool-pwndbg-pwngdb/" title="Pwngdb + Pwndbg 的联合使用"><img class="cover" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/Lantern-r/cdn_files@latest/img/pexels-sebastiaan-stam-3022001.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2020-07-27</div><div class="title">Pwngdb + Pwndbg 的联合使用</div></div></a></div><div><a href="/note-tool-pwndocker/" title="pwndocker"><img class="cover" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/Lantern-r/cdn_files@latest/img/pexels-sebastiaan-stam-1480690.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2020-05-25</div><div class="title">pwndocker</div></div></a></div><div><a href="/note-tool-pwntools/" title="Pwntools"><img class="cover" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/Lantern-r/cdn_files@latest/img/pexels-nick-rtr-3129443.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2020-08-05</div><div class="title">Pwntools</div></div></a></div><div><a href="/note-tool-xortool/" title="xortool"><img class="cover" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/Lantern-r/cdn_files@latest/img/5ad63bd8df873.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2020-05-05</div><div class="title">xortool</div></div></a></div></div></div><hr><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i> <span>评论</span></div></div><div class="comment-wrap"><div><div id="gitalk-container"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/Lantern-r/cdn_files/img/lantern.jpg" onerror='this.onerror=null,this.src="/img/friend_404.gif"' alt="avatar"></div><div class="author-info__name">Lantern</div><div class="author-info__description">一位二进制萌新</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">86</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">50</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">15</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/Lantern-r"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/lantern-r" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:l2674318405@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a><a class="social-icon" href="/atom.xml" target="_blank" title="RSS"><i class="fas fa-rss"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">Never Give Up</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%8E%B0%E7%94%A8%E5%B7%A5%E5%85%B7"><span class="toc-number">1.</span> <span class="toc-text">现用工具</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9B%BE%E7%94%A8%E5%B7%A5%E5%85%B7"><span class="toc-number">2.</span> <span class="toc-text">曾用工具</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/note-tool-z3/" title="Z3"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/Lantern-r/cdn_files@latest/img/pexels-nick-rtr-3129443.jpg" onerror='this.onerror=null,this.src="/img/404.jpg"' alt="Z3"></a><div class="content"><a class="title" href="/note-tool-z3/" title="Z3">Z3</a><time datetime="2022-05-14T00:43:19.000Z" title="更新于 2022-05-14 00:43:19">2022-05-14</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/CVE-d-link-dir-505/" title="D-Link Dir-505 便携路由器越界漏洞分析"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/Lantern-r/cdn_files@latest/img/pexels-sebastiaan-stam-1097456.jpg" onerror='this.onerror=null,this.src="/img/404.jpg"' alt="D-Link Dir-505 便携路由器越界漏洞分析"></a><div class="content"><a class="title" href="/CVE-d-link-dir-505/" title="D-Link Dir-505 便携路由器越界漏洞分析">D-Link Dir-505 便携路由器越界漏洞分析</a><time datetime="2021-11-09T17:44:37.000Z" title="更新于 2021-11-09 17:44:37">2021-11-09</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/CVE-d-link-dir-645/" title="D-Link Dir-645 路由器溢出漏洞分析"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/Lantern-r/cdn_files@latest/img/pexels-sebastiaan-stam-1097456.jpg" onerror='this.onerror=null,this.src="/img/404.jpg"' alt="D-Link Dir-645 路由器溢出漏洞分析"></a><div class="content"><a class="title" href="/CVE-d-link-dir-645/" title="D-Link Dir-645 路由器溢出漏洞分析">D-Link Dir-645 路由器溢出漏洞分析</a><time datetime="2021-11-08T17:44:37.000Z" title="更新于 2021-11-08 17:44:37">2021-11-08</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/wp-games-buuctf/" title="BUUOJ 题库练习"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/Lantern-r/cdn_files/img/write_up.png" onerror='this.onerror=null,this.src="/img/404.jpg"' alt="BUUOJ 题库练习"></a><div class="content"><a class="title" href="/wp-games-buuctf/" title="BUUOJ 题库练习">BUUOJ 题库练习</a><time datetime="2021-11-04T19:10:31.000Z" title="更新于 2021-11-04 19:10:31">2021-11-04</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/CVE-d-link-dir-815/" title="D-Link DIR-815 路由器多次溢出漏洞分析"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/Lantern-r/cdn_files@latest/img/pexels-sebastiaan-stam-1480690.jpg" onerror='this.onerror=null,this.src="/img/404.jpg"' alt="D-Link DIR-815 路由器多次溢出漏洞分析"></a><div class="content"><a class="title" href="/CVE-d-link-dir-815/" title="D-Link DIR-815 路由器多次溢出漏洞分析">D-Link DIR-815 路由器多次溢出漏洞分析</a><time datetime="2021-10-28T17:44:37.000Z" title="更新于 2021-10-28 17:44:37">2021-10-28</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2019 - 2023 By Lantern</div><div class="framework-info"><span>框架</span> <a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题</span> <a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">Hi, welcome to my blog!</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (true){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><div class="js-pjax"><script>function loadGitalk () {
+  function initGitalk () {
+    var gitalk = new Gitalk(Object.assign({
+      clientID: 'eba91da4778bec626f83',
+      clientSecret: '28e43c46124583d177809ce45217e5671439363c',
+      repo: 'Lantern-r.github.io',
+      owner: 'Lantern-r',
+      admin: ['Lantern-r'],
+      id: 'fc274e03c9717bb4fc6c7876ecc25904',
+      updateCountCallback: commentCount
+    },null))
+
+    gitalk.render('gitalk-container')
+  }
+
+  if (typeof Gitalk === 'function') initGitalk()
+  else {
+    getCSS('https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.css')
+    getScript('https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js').then(initGitalk)
+  }
+}
+
+function commentCount(n){
+  let isCommentCount = document.querySelector('#post-meta .gitalk-comment-count')
+  if (isCommentCount) {
+    isCommentCount.innerHTML= n
+  }
+}
+
+if ('Gitalk' === 'Gitalk' || !false) {
+  if (false) btf.loadComment(document.getElementById('gitalk-container'), loadGitalk)
+  else loadGitalk()
+} else {
+  function loadOtherComment () {
+    loadGitalk()
+  }
+}</script></div><script id="click-show-text" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/click-show-text.min.js" data-mobile="false" data-text="Just,Learn,Fast" data-fontsize="15px" data-random="false" async></script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: true,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener scroll 
+  window.tocScrollFn && window.removeEventListener('scroll', window.tocScrollFn)
+  window.scrollCollect && window.removeEventListener('scroll', scrollCollect)
+
+  document.getElementById('rightside').style.cssText = "opacity: ''; transform: ''"
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+  typeof disqusjs === 'object' && disqusjs.destroy()
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', 'UA-165381350-1', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i> <span>数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"></div></div><hr><div id="local-search-results"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js"></script></div></body></html>
